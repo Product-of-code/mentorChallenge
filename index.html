@@ -27,9 +27,9 @@
       .container{
         display:flex;
         height:500px;
-        margin-top:250px;
-        margin-left:400px;
-        margin-right:550px;
+        margin-top:500px;
+        margin-left:450px;
+        margin-right:450px;
         width:900px;
       }
       p{
@@ -115,6 +115,21 @@
         border:none;
         color:hsl(179, 100%, 13%);
         width:130px;
+      }
+      @media(max-width:500px){
+        .container{
+          display:flex;
+          flex-direction:column;
+        }
+        .leftButton{
+          background:skyblue;
+        }
+        .middleButton{
+          background:cornflowerblue;
+        }
+        .rightButton{
+          background:chartreuse;
+        }
       }
       </style>
   </head>
